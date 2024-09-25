@@ -16,9 +16,12 @@ drp_country = Select(driver.find_element(By.XPATH,"//select[@id='cars']"))
 
 
 drp_country.select_by_value('bmw')
-time.sleep(10)
+time.sleep(5)
 
 #also by value you can choose::::
 #drp_country.select_by_value(10)
 allopt = drp_country.options
 print("all options are ",len(allopt))
+
+for opt in allopt:
+    print(opt.text)
