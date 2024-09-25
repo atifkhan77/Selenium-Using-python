@@ -20,3 +20,5 @@ time.sleep(10)
 
 #also by value you can choose::::
 #drp_country.select_by_value(10)
+allopt = drp_country.options
+print("all options are ",len(allopt))
